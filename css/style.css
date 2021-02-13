@@ -18,11 +18,12 @@ body {
 
 h1, h2 {
   font-family: 'Dorsa', Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 h1 {
   font-size: 3.5rem;   /* 56px */
+  line-height: 3rem;   /* 48px */
 }
 
 h2 {
@@ -30,6 +31,13 @@ h2 {
   line-height: 6rem;   /* 96px */
   margin-bottom: 1.5rem;   /* 24px */
   text-align: center;
+}
+
+h3 {
+  font-size: 1.125rem;   /* 18px */
+  line-height: 3rem;   /* 48px */
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 /* color palette  */
@@ -45,6 +53,8 @@ body {
   color: var(--main);
 }
 
+/* svg styles */
+
 svg {
   fill: var(--accent);
 }
@@ -55,6 +65,22 @@ a svg:hover {
 
 a svg:active {
   opacity: 0.25;
+}
+
+.closing-svg {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.closing-svg svg {
+  flex-basis: 2.375rem;   /* 38px */
+}
+
+/* transition styles */
+
+a, svg {
+  transition: 0.125s ease-in-out;
 }
 
 /* header styles */
@@ -184,8 +210,146 @@ nav ul {
   padding: 3rem 1rem 3rem;
 }
 
-
-
 .welcome p {
   font-size: 1.125rem;   /* 18px */
+}
+
+/* about styles */
+
+.about {
+  background-color: var(--main);
+  color: var(--accent);
+  padding: 3rem 1rem 3rem;
+}
+
+/* provide styles */
+
+.provide {
+  background-color: var(--main);
+  color: var(--accent);
+  padding: 3rem 1rem 3rem;
+}
+
+.provision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* .provision:hover {
+  background-color: var(--main);
+} */
+
+.provision svg {
+  flex-basis: 6.25rem;   /* 100px */
+  margin-bottom: 1rem;
+}
+
+.provision:first-of-type svg {
+  flex-basis: 5.25rem;   /* 84px */
+}
+
+.provision h3 {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+/* portfolio styles */
+
+.portfolio {
+  padding: 3rem 1rem 3rem;
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio a {
+  background-color: var(--main);
+  color: var(--accent);
+  padding: 1rem;
+  flex-basis: calc((100% - 1rem) / 2);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: auto;
+  text-transform: uppercase;
+  margin-top: 4.5rem;
+}
+
+.portfolio a:hover {
+  color: var(--main);
+  background-color: var(--accent);
+}
+
+.portfolio a:active {
+  color: var(--main);
+  background-color: var(--accent);
+}
+
+/* footer styles */
+
+footer {
+  background-color: var(--main);
+  color: var(--accent);
+  padding: 4.5rem 0 0;
+}
+
+.footer-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-logo svg {
+  flex-basis: 1.75rem;   /* 28px */
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo h2 {
+  font-size: 3.375rem;   /* 54px */
+  line-height: 3rem;   /* 48px */
+  display: block;
+  flex-basis: 100%;
+  color: var(--accent);
+}
+
+footer ul {
+  margin: 2rem 0;
+}
+
+footer ul a {
+  padding: 1rem;
+  color: var(--accent);
+  line-height: 1.5rem;
+  display: block;
+  text-align: right;
+}
+
+footer ul a:hover {
+  opacity: 0.25;
+}
+
+footer ul a:active {
+  opacity: 0.25;
+}
+
+footer .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 4rem;
+  padding-right: 0.5rem;
+}
+
+footer .social a {
+  padding: 0.5rem;
+}
+
+footer .social svg {
+  width: 2rem;
 }
