@@ -353,3 +353,10 @@ footer .social a {
 footer .social svg {
   width: 2rem;
 }
+
+footer .copyright {
+  margin: 2rem 1rem 0;
+  padding: 1rem 0;
+  border-top: 1px var(--accent) solid;
+  text-align: right;
+}
