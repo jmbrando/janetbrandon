@@ -1,10 +1,10 @@
-/* base styles */
+/************************ base styles ************************/
 
 .hidden {
   display: none;
 }
 
-/* text styles */
+/************************ text styles ************************/
 
 html {
   font-size: 100%;
@@ -40,12 +40,13 @@ h3 {
   font-weight: 500;
 }
 
-/* color palette  */
+/************************ color palette  ************************/
 
 :root {
   --main: #1F3646;
   --accent: #D29427;
   --bkg: #FFFDF8;
+  --accent-sm: #E3B940;
 }
 
 body {
@@ -83,7 +84,7 @@ a, svg {
   transition: 0.125s ease-in-out;
 }
 
-/* header styles */
+/************************ header styles ************************/
 
 header .container {
   position: relative;
@@ -179,11 +180,25 @@ nav ul {
   font-size: 1.25rem;   /* 20px */
 }
 
-/* banner styles */
+/************************ banner styles ************************/
 
 .banner-home {
   background-image: url(../img/profile.png);
 }
+
+.banner-graphic {
+  background-image: url(../img/graphic.jpg);
+}
+
+.banner-web {
+  background-image: url(../img/web.jpg);
+}
+
+.banner-contact {
+  background-image: url(../img/contact.jpg);
+}
+
+/************************ main page styles ************************/
 
 .banner {
   background-position: center;
@@ -237,10 +252,6 @@ nav ul {
   margin-bottom: 3rem;
 }
 
-/* .provision:hover {
-  background-color: var(--main);
-} */
-
 .provision svg {
   flex-basis: 6.25rem;   /* 100px */
   margin-bottom: 1rem;
@@ -267,7 +278,10 @@ nav ul {
   flex-wrap: wrap;
 }
 
-.portfolio a {
+.portfolio a,
+.web-link a,
+.graphic-link a,
+.message a {
   background-color: var(--main);
   color: var(--accent);
   padding: 1rem;
@@ -291,7 +305,160 @@ nav ul {
   background-color: var(--accent);
 }
 
-/* footer styles */
+/************************ graphic page styles ************************/
+
+.graphic-portfolio {
+  padding: 3rem 1rem 3rem;
+}
+
+.web-link {
+  padding: 0 1rem 3rem;
+}
+
+.web-link a:hover {
+  color: var(--main);
+  background-color: var(--accent);
+}
+
+.web-link a:active {
+  color: var(--main);
+  background-color: var(--accent);
+}
+
+.portfolio-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.web-link a {
+  flex-basis: 50%;
+}
+
+/************************ web page styles ************************/
+
+.web-portfolio {
+  padding: 3rem 1rem 3rem;
+}
+
+.graphic-link {
+  padding: 0 1rem 3rem;
+}
+
+.graphic-link a:hover {
+  color: var(--main);
+  background-color: var(--accent);
+}
+
+.graphic-link a:active {
+  color: var(--main);
+  background-color: var(--accent);
+}
+
+/************************ contact page styles ************************/
+
+.contact {
+  padding: 3rem 1rem 3rem;
+}
+
+/* contact links styles */
+
+.contact-links {
+  padding: 2rem 1rem;
+  background-color: var(--main);
+  color: var(--accent);
+}
+
+.contact-links a {
+  color: var(--accent);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  padding: 0.5rem;
+}
+
+.social-links svg {
+  width: 2rem;
+}
+
+.social-links p  {
+  margin-top: -0.5rem;
+}
+
+.social-media {
+  flex-basis: 6.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  justify-content: space-between;
+}
+
+.social-media .behance {
+  margin-top: 0.25rem;
+}
+
+/* message styles */
+
+.message {
+  padding: 3rem 1rem 3rem;
+}
+
+.message a:hover {
+  color: var(--main);
+  background-color: var(--accent);
+}
+
+.message a:active {
+  color: var(--main);
+  background-color: var(--accent);
+}
+
+.message form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.message input,
+.message label,
+.message textarea {
+  flex-basis: 100%;
+}
+
+.message label {
+  margin-top: 1rem;
+}
+
+.message input,
+.message textarea {
+  padding: 0.5rem 0.75rem;
+  line-height: 2rem;
+  border: 1px solid var(--main);
+  border-radius: 3px;
+}
+
+.message input:hover,
+.message textarea:hover {
+  background-color: var(--accent-sm);
+}
+
+.message input:active,
+.message textarea:active {
+  background-color: var(--accent-sm);
+}
+
+.message textarea {
+  min-height: 10rem;
+}
+
+/************************ footer styles ************************/
 
 footer {
   background-color: var(--main);
@@ -352,6 +519,14 @@ footer .social a {
 
 footer .social svg {
   width: 2rem;
+}
+
+footer .social .facebook {
+  padding-right: 0.25rem;
+}
+
+footer .social .linkedin {
+  margin-top: -0.25rem;
 }
 
 footer .copyright {
