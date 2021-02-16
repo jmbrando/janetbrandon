@@ -35,7 +35,7 @@ h2 {
 
 h3 {
   font-size: 1.125rem;   /* 18px */
-  line-height: 3rem;   /* 48px */
+  line-height: 1.5rem;   /* 48px */
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -58,6 +58,10 @@ body {
 
 svg {
   fill: var(--accent);
+}
+
+a {
+  cursor: pointer;
 }
 
 a svg:hover {
@@ -264,6 +268,7 @@ nav ul {
 .provision h3 {
   flex-basis: 100%;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 /* portfolio styles */
@@ -338,8 +343,108 @@ nav ul {
 /************************ web page styles ************************/
 
 .web-portfolio {
-  padding: 3rem 1rem 3rem;
+  padding: 3rem 0;
 }
+
+.web-portfolio .container {
+  padding: 0 1rem;
+}
+
+/* web grid styles */
+
+.web-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.web-item {
+  flex-basis: 100%;
+  color: var(--accent);
+  position: relative;
+  padding: 0 1rem;
+}
+
+.add-bg {
+  background-color: var(--main);
+}
+
+.web-item .closing-area {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.web-item .close-btn {
+  padding: 1.25rem;
+  margin-left: auto;
+  margin-right: -1rem;
+}
+
+.web-item .close-btn svg {
+  width: 1.5rem;
+}
+
+.web-item picture {
+  flex-basis: 100%;
+}
+
+.item-text {
+  margin-top: 1.5rem;
+  flex-basis: 100%;
+}
+
+.site-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.site-links a {
+  background-color: var(--accent);
+  color: var(--main);
+  padding: 1rem;
+  flex-basis: calc((100% - 1rem) / 2);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: auto;
+  text-transform: uppercase;
+  margin-top: 4.5rem;
+}
+
+.site-links a:hover {
+  color: var(--accent);
+  background-color: var(--main);
+}
+
+.site-links a:active {
+  color: var(--accent);
+  background-color: var(--main);
+}
+
+.web-item .closing-svg {
+  margin-bottom: 3rem;
+}
+
+.details {
+  position: absolute;
+  height: 0;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.show-details {
+  position: static;
+  height: auto;
+  opacity: 1;
+}
+
+
+/* graphic design page link styles */
 
 .graphic-link {
   padding: 0 1rem 3rem;
@@ -388,8 +493,8 @@ nav ul {
   width: 2rem;
 }
 
-.social-links p  {
-  margin-top: -0.5rem;
+.social-links h3  {
+  margin-top: 0.5rem;
 }
 
 .social-media {
