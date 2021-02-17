@@ -187,7 +187,8 @@ nav ul {
 /************************ banner styles ************************/
 
 .banner-home {
-  background-image: url(../img/profile.png);
+  background-image: url(../img/profile-sm.jpg);
+  background-image: url(../img/profile-sm.webp);
 }
 
 .banner-graphic {
