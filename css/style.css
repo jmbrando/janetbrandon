@@ -313,8 +313,95 @@ nav ul {
 /************************ graphic page styles ************************/
 
 .graphic-portfolio {
-  padding: 3rem 1rem 3rem;
+  padding: 3rem 0;
 }
+
+.graphic-portfolio .container {
+  padding: 0 1rem;
+}
+
+/* graphic grid styles */
+
+.graphic-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.graphic-item {
+  flex-basis: 100%;
+  color: var(--accent);
+  position: relative;
+  padding: 0 1rem;
+}
+
+.add-bg {
+  background-color: var(--main);
+}
+
+.graphic-item .closing-area {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.graphic-item .graphic-close {
+  padding: 1.25rem;
+  margin-left: auto;
+  margin-right: -1rem;
+}
+
+.graphic-item .graphic-close svg {
+  width: 1.5rem;
+}
+
+.graphic-item picture {
+  flex-basis: 100%;
+}
+
+.item-text {
+  margin-top: 1.5rem;
+  flex-basis: 100%;
+}
+
+.picture-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.picture-link a {
+  background-color: var(--accent);
+  color: var(--main);
+  padding: 1rem;
+  flex-basis: calc((100% - 1rem) / 2);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: auto;
+  text-transform: uppercase;
+  margin-top: 4.5rem;
+}
+
+.picture-link a:hover {
+  color: var(--accent);
+  background-color: var(--main);
+}
+
+.picture-link a:active {
+  color: var(--accent);
+  background-color: var(--main);
+}
+
+.graphic-item .closing-svg {
+  margin-bottom: 3rem;
+}
+
+
+/* web page link styles */
 
 .web-link {
   padding: 0 1rem 3rem;
@@ -377,13 +464,13 @@ nav ul {
   flex-wrap: wrap;
 }
 
-.web-item .close-btn {
+.web-item .web-close {
   padding: 1.25rem;
   margin-left: auto;
   margin-right: -1rem;
 }
 
-.web-item .close-btn svg {
+.web-item .web-close svg {
   width: 1.5rem;
 }
 
