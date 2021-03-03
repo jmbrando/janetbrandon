@@ -95,7 +95,7 @@ header .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 header a {
@@ -119,6 +119,7 @@ header .flag svg {
 header .logo {
   z-index: 15;
   position: fixed;
+  margin-top: 0.125rem;
 }
 
 nav {
@@ -189,24 +190,30 @@ nav ul {
 .banner-home {
   background-image: url(../img/profile-sm.jpg);
   background-image: url(../img/profile-sm.webp);
+  background-position: center;
 }
 
 .banner-graphic {
-  background-image: url(../img/graphic.jpg);
+  background-image: url(../img/graphic-sm.jpg);
+  background-image: url(../img/graphic-sm.webp);
+  background-position: center;
 }
 
 .banner-web {
-  background-image: url(../img/web.jpg);
+  background-image: url(../img/web-sm.jpg);
+  background-image: url(../img/web-sm.webp);
+  background-position: center;
 }
 
 .banner-contact {
-  background-image: url(../img/contact.jpg);
+  background-image: url(../img/contact-sm.jpg);
+  background-image: url(../img/contact-sm.webp);
+  background-position: top;
 }
 
 /************************ main page styles ************************/
 
 .banner {
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 15rem;
@@ -370,7 +377,7 @@ nav ul {
 .picture-link {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .picture-link a {
@@ -727,4 +734,220 @@ footer .copyright {
   padding: 1rem 0;
   border-top: 1px var(--accent) solid;
   text-align: right;
+}
+
+
+@media (min-width: 400px) {
+
+  .graphic-grid {
+    /* grid-auto-flow: dense; */
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+  }
+
+  .graphic-item {
+    padding: 0;
+    min-width: 10rem;
+  }
+
+  .web-grid {
+    /* grid-auto-flow: dense; */
+    padding: 0 1rem;
+  }
+
+  .web-item {
+    padding: 0;
+    min-width: 10rem;
+  }
+
+  .add-bg {
+    padding: 0 1rem;
+    grid-column: 1 / -1;
+    margin: 0 -1rem;
+  }
+
+}
+
+
+
+@media (min-width: 480px) {
+
+  header .menu-btn,
+  header .exit-btn,
+  header .menu-logo {
+    display: none;
+  }
+
+  nav {
+    position: static;
+    min-height: auto;
+    min-width: auto;
+    margin: 0;
+    background: none;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: var(--main);
+    font-size: 1.125rem;
+  }
+
+  nav ul li a:hover {
+    color: var(--accent);
+    opacity: 1;
+  }
+
+  nav ul li a:active {
+    color: var(--accent);
+    opacity: 1;
+  }
+
+  /* banner styles */
+
+  .banner {
+    height: 30vh;
+  }
+
+  .banner-cover-box {
+    height: 30vh;
+  }
+
+  /* footer styles */
+
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .social {
+    margin: 0;
+    margin-left: -0.5rem;
+  }
+
+  footer .copyright {
+    margin: 0;
+    border: 0;
+  }
+
+  .bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+    border-top: 1px var(--accent) solid;
+  }
+
+}
+
+
+@media (min-width: 600px) {
+
+  .text-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .content-container p {
+    flex-basis: 50%;
+  }
+
+  .web-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-home {
+    background-image: url(../img/profile-md.jpg);
+    background-image: url(../img/profile-md.webp);
+  }
+
+  .banner-graphic {
+    background-image: url(../img/graphic-md.jpg);
+    background-image: url(../img/graphic-md.webp);
+  }
+
+  .banner-web {
+    background-image: url(../img/web-md.jpg);
+    background-image: url(../img/web-md.webp);
+  }
+
+  .banner-contact {
+    background-image: url(../img/contact-md.jpg);
+    background-image: url(../img/contact-md.webp);
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  .container,
+  .content-container {
+    max-width: 60rem;   /* 960px */
+    margin: 0 auto;
+  }
+
+  .text-container {
+    max-width: 40rem;
+  }
+
+  .banner {
+    height: 40vh;
+  }
+
+  .banner-cover-box {
+    height: 40vh;
+  }
+
+}
+
+
+@media (min-width: 1000px) {
+
+  .banner-home {
+    background-image: url(../img/profile-lg.jpg);
+    background-image: url(../img/profile-lg.webp);
+  }
+
+  .banner-graphic {
+    background-image: url(../img/graphic-lg.jpg);
+    background-image: url(../img/graphic-lg.webp);
+  }
+
+  .banner-web {
+    background-image: url(../img/web-lg.jpg);
+    background-image: url(../img/web-lg.webp);
+  }
+
+  .banner-contact {
+    background-image: url(../img/contact-lg.jpg);
+    background-image: url(../img/contact-lg.webp);
+  }
+
+}
+
+@media (min-width: 1300px) {
+
+  /* .banner-home {
+    background-image: url(../img/profile-xl.jpg);
+    background-image: url(../img/profile-xl.webp);
+  } */
+
+  .banner-graphic {
+    background-image: url(../img/graphic-xl.jpg);
+    background-image: url(../img/graphic-xl.webp);
+  }
+
+  .banner-web {
+    background-image: url(../img/web-xl.jpg);
+    background-image: url(../img/web-xl.webp);
+  }
+
+  .banner-contact {
+    background-image: url(../img/contact-xl.jpg);
+    background-image: url(../img/contact-xl.webp);
+  }
+
 }
