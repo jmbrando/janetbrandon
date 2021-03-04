@@ -926,6 +926,15 @@ footer .copyright {
     background-image: url(../img/contact-lg.webp);
   }
 
+  .banner {
+    height: 50vh;
+    opacity: 0.6;
+  }
+
+  .banner-cover-box {
+    height: 50vh;
+  }
+
 }
 
 @media (min-width: 1300px) {
