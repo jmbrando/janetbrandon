@@ -60,7 +60,7 @@ svg {
   fill: var(--accent);
 }
 
-a {
+a, button {
   cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ a svg:active {
 
 /* transition styles */
 
-a, svg {
+a, svg, button {
   transition: 0.125s ease-in-out;
 }
 
@@ -294,7 +294,7 @@ nav ul {
 .portfolio a,
 .web-link a,
 .graphic-link a,
-.message a {
+.message button {
   background-color: var(--main);
   color: var(--accent);
   padding: 1rem;
@@ -303,9 +303,10 @@ nav ul {
   justify-content: center;
   text-align: center;
   align-items: center;
-  line-height: auto;
   text-transform: uppercase;
   margin-top: 4.5rem;
+  border: none;
+
 }
 
 .portfolio a:hover {
@@ -336,6 +337,7 @@ nav ul {
   justify-content: space-around;
   display: grid;
   grid-gap: 1rem;
+  margin-top: 3rem;
 }
 
 .graphic-item {
@@ -389,7 +391,6 @@ nav ul {
   justify-content: center;
   text-align: center;
   align-items: center;
-  line-height: auto;
   text-transform: uppercase;
   margin-top: 4.5rem;
 }
@@ -453,6 +454,7 @@ nav ul {
   justify-content: space-around;
   display: grid;
   grid-gap: 1rem;
+  margin-top: 3rem;
 }
 
 .web-item {
@@ -506,7 +508,6 @@ nav ul {
   justify-content: center;
   text-align: center;
   align-items: center;
-  line-height: auto;
   text-transform: uppercase;
   margin-top: 4.5rem;
 }
@@ -610,12 +611,12 @@ nav ul {
   padding: 3rem 1rem 3rem;
 }
 
-.message a:hover {
+.message button:hover {
   color: var(--main);
   background-color: var(--accent);
 }
 
-.message a:active {
+.message button:active {
   color: var(--main);
   background-color: var(--accent);
 }
