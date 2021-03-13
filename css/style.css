@@ -659,6 +659,15 @@ nav ul {
   min-height: 10rem;
 }
 
+.thank-you {
+  padding: 10rem 1rem;
+  text-align: center;
+}
+
+.form-invalid {
+  outline: 1px solid red;
+}
+
 /************************ footer styles ************************/
 
 footer {

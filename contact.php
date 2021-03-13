@@ -1,3 +1,35 @@
+<?php
+
+  $message_sent = false;
+  if(isset($_POST['email']) && $_POST['email'] != ''){
+
+    if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
+
+      // submit the form
+      $userName = $_POST['name'];
+      $userEmail = $_POST['email'];
+      $messageSubject = $_POST['subject'];
+      $message = $_POST['message'];
+
+      $to = "janetmbrandon@gmail.com";
+      $body = "";
+
+      $body .= "From: ".$userName. "\r\n";
+      $body .= "Email: ".$userEmail. "\r\n";
+      $body .= "Message: ".$message. "\r\n";
+
+      mail($to,$messageSubject,$body);
+
+      $message_sent = true;
+    }
+    else{
+      $invalid_class_name = "form-invalid";
+    }
+
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -46,7 +78,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="graphic.html">Graphic Design</a></li>
               <li><a href="web.html">Web Design</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="contact.php">Contact</a></li>
             </ul>
             <a href="index.html" class="menu-logo">
               <h1>Janet Brandon</h1>
@@ -115,15 +147,31 @@
         </div>
       </section>
 
+      <?php
+      if($message_sent):
+      ?>
+
+      <section class="thank-you">
+        <div class="text-container">
+          <!-- <h4>Thank you for your message, we'll be in touch.</h4> -->
+          <h4>Sorry! This contact form is currently under construction. Please try again later.</h4>
+        </div>
+      </section>
+
+      <?php
+      else:
+      ?>
       <section class="message">
         <div class="text-container">
           <h2>Message</h2>
           <p>Interested in finding out more? Send me a brief message and I will be happy to respond!</p>
-          <form>
+          <form action="contact.php" method="POST" class="form">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" class="<?= $invalid_class_name ?? "" ?>">
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject">
             <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
             <button type="submit" name="submit" class="button">Submit</button>
@@ -136,6 +184,10 @@
           </div>
         </div>
       </section>
+      
+      <?php
+      endif;
+      ?> 
 
       <footer>
         <div class="container">
@@ -149,7 +201,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="graphic.html">Graphic Design</a></li>
             <li><a href="web.html">Web Design</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
           <div class="bottom-bar">
             <div class="social">
