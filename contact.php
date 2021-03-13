@@ -43,6 +43,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dorsa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
     <link rel="stylesheet" href="css/template.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -184,10 +189,10 @@
           </div>
         </div>
       </section>
-      
+
       <?php
       endif;
-      ?> 
+      ?>
 
       <footer>
         <div class="container">
