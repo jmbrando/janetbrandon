@@ -158,8 +158,7 @@
 
       <section class="thank-you">
         <div class="text-container">
-          <!-- <h4>Thank you for your message, we'll be in touch.</h4> -->
-          <h4>Sorry! This contact form is currently under construction. Please try again later.</h4>
+          <h4>Thank you for your message, we'll be in touch.</h4>
         </div>
       </section>
 
