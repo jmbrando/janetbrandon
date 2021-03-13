@@ -472,10 +472,6 @@ nav ul {
   padding: 0 1rem;
 }
 
-.add-bg {
-  background-color: var(--main);
-}
-
 .web-item .closing-area {
   flex-basis: 100%;
   display: flex;
@@ -499,6 +495,50 @@ nav ul {
 .item-text {
   margin-top: 1.5rem;
   flex-basis: 100%;
+}
+
+@media (min-width: 600px) {
+
+  .add-bg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .web-open {
+    flex-basis: calc((100% - 1rem) * 0.6);
+  }
+
+  .web-item .item-text {
+    flex-basis: calc((100% - 1rem) * 0.4);
+  }
+
+  .web-item .site-links {
+    flex-basis: 60%;
+    margin: 0 auto;
+  }
+
+  .web-item .closing-svg {
+    flex-basis: 100%;
+  }
+
+  .graphic-open {
+    flex-basis: calc((100% - 1rem) * 0.6);
+  }
+
+  .graphic-item .item-text {
+    flex-basis: calc((100% - 1rem) * 0.4);
+  }
+ 
+  .graphic-item .picture-link {
+    flex-basis: 60%;
+    margin: 0 auto;
+  }
+
+  .graphic-item .closing-svg {
+    flex-basis: 100%;
+  }
 }
 
 .site-links {
@@ -796,6 +836,10 @@ footer .copyright {
     display: none;
   }
 
+  header .logo {
+    position: absolute;
+  }
+
   nav {
     position: static;
     min-height: auto;
@@ -897,6 +941,10 @@ footer .copyright {
     background-image: url(../img/contact-md.webp);
   }
 
+  /* portfolio grid flex */
+
+
+
 }
 
 @media (min-width: 800px) {
@@ -946,7 +994,7 @@ footer .copyright {
 
   .banner {
     height: 50vh;
-    opacity: 0.6;
+    opacity: 0.7;
   }
 
   .banner-cover-box {

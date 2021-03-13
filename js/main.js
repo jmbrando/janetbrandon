@@ -42,7 +42,7 @@ var graphicB = document.querySelectorAll('.graphic-close').forEach(graphicClose 
   });
 });
 
-
+ 
 // web scripts
 
 var webA = document.querySelectorAll('.web-open').forEach(webOpen => {
