@@ -33,6 +33,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V41J4HDCYH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V41J4HDCYH');
+    </script>
+
     <meta charset="UTF-8">
     <title>Janet Brandon | Edmonton Graphic Designer, Website Designer, Freelance Artist | Contact Page</title>
     <meta name="description" content="Contact page of Janet Brandon: Edmonton Graphic Designer, Website Designer and Freelance Artist">
