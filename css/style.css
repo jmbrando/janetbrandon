@@ -497,50 +497,6 @@ nav ul {
   flex-basis: 100%;
 }
 
-@media (min-width: 600px) {
-
-  .add-bg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .web-open {
-    flex-basis: calc((100% - 1rem) * 0.6);
-  }
-
-  .web-item .item-text {
-    flex-basis: calc((100% - 1rem) * 0.4);
-  }
-
-  .web-item .site-links {
-    flex-basis: 60%;
-    margin: 0 auto;
-  }
-
-  .web-item .closing-svg {
-    flex-basis: 100%;
-  }
-
-  .graphic-open {
-    flex-basis: calc((100% - 1rem) * 0.6);
-  }
-
-  .graphic-item .item-text {
-    flex-basis: calc((100% - 1rem) * 0.4);
-  }
-
-  .graphic-item .picture-link {
-    flex-basis: 60%;
-    margin: 0 auto;
-  }
-
-  .graphic-item .closing-svg {
-    flex-basis: 100%;
-  }
-}
-
 .site-links {
   display: flex;
   flex-wrap: wrap;
@@ -566,6 +522,35 @@ nav ul {
 }
 
 .site-links a:active {
+  color: var(--accent);
+  background-color: var(--main);
+}
+
+.app-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app-link a {
+  background-color: var(--accent);
+  color: var(--main);
+  padding: 1rem;
+  flex-basis: calc((100% - 1rem) / 2);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 4.5rem;
+}
+
+.app-link a:hover {
+  color: var(--accent);
+  background-color: var(--main);
+}
+
+.app-link a:active {
   color: var(--accent);
   background-color: var(--main);
 }
@@ -905,6 +890,55 @@ footer .copyright {
 
 }
 
+@media (min-width: 600px) {
+
+  .add-bg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .web-open {
+    flex-basis: calc((100% - 1rem) * 0.6);
+  }
+
+  .web-item .item-text {
+    flex-basis: calc((100% - 1rem) * 0.4);
+  }
+
+  .web-item .site-links {
+    flex-basis: 60%;
+    margin: 0 auto;
+  }
+
+  .web-item .app-link {
+    flex-basis: 60%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .web-item .closing-svg {
+    flex-basis: 100%;
+  }
+
+  .graphic-open {
+    flex-basis: calc((100% - 1rem) * 0.6);
+  }
+
+  .graphic-item .item-text {
+    flex-basis: calc((100% - 1rem) * 0.4);
+  }
+
+  .graphic-item .picture-link {
+    flex-basis: 60%;
+    margin: 0 auto;
+  }
+
+  .graphic-item .closing-svg {
+    flex-basis: 100%;
+  }
+}
 
 @media (min-width: 600px) {
 
