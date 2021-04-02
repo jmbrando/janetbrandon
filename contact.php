@@ -45,8 +45,8 @@
 
     <meta charset="UTF-8">
     <title>Janet Brandon | Edmonton Graphic Designer, Website Designer, Freelance Artist | Contact Page</title>
-    <meta name="description" content="Contact page of Janet Brandon: Edmonton Graphic Designer, Website Designer and Freelance Artist">
-    <meta name="keywords" content="edmonton graphic designer, web designer, website, freelance, artist, illustrator, visual communications">
+    <meta name="description" content="Contact page of Janet Brandon: Edmonton Graphic Designer, UX / UI Design, Website Designer and Freelance Artist">
+    <meta name="keywords" content="edmonton graphic designer, web designer, website, freelance, artist, ux/ui, design, illustrator, visual communications">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -92,12 +92,13 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="graphic.html">Graphic Design</a></li>
-              <li><a href="web.html">Web Design</a></li>
+              <li><a href="web.html">UX/UI Design</a></li>
               <li><a href="contact.php">Contact</a></li>
             </ul>
             <a href="index.html" class="menu-logo">
               <h1>Janet Brandon</h1>
               <p>Graphic Design</p>
+              <p>UX/UI Design</p>
             </a>
           </nav>
         </div>
@@ -214,7 +215,7 @@
           <ul class="footer-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="graphic.html">Graphic Design</a></li>
-            <li><a href="web.html">Web Design</a></li>
+            <li><a href="web.html">UX/UI Design</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
           <div class="bottom-bar">
@@ -254,6 +255,7 @@
             <div class="copyright">
               <p>&copy; Copyright 2021 Janet Brandon</p>
               <p>Edmonton Graphic Designer</p>
+              <p>UX/UI Designer</p>
             </div>
           </div>
         </div>

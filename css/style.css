@@ -182,7 +182,7 @@ nav ul {
 }
 
 .menu-logo p {
-  font-size: 1.25rem;   /* 20px */
+  font-size: 1.125rem;   /* 18px */
 }
 
 /************************ banner styles ************************/
@@ -530,7 +530,7 @@ nav ul {
   .graphic-item .item-text {
     flex-basis: calc((100% - 1rem) * 0.4);
   }
- 
+
   .graphic-item .picture-link {
     flex-basis: 60%;
     margin: 0 auto;
