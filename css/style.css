@@ -1027,12 +1027,12 @@ footer .copyright {
   }
 
   .banner {
-    height: 50vh;
-    opacity: 0.7;
+    height: 80vh;
+    opacity: 0.8;
   }
 
   .banner-cover-box {
-    height: 50vh;
+    height: 80vh;
   }
 
 }
