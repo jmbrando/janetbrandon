@@ -388,6 +388,18 @@ nav ul {
   flex-basis: 100%;
 }
 
+.graphic-open img {
+  transition: all ease-in-out 0.5s;
+}
+
+.graphic-open img:hover {
+  opacity: 0.5;
+}
+
+.graphic-open img:active {
+  opacity: 0.5;
+}
+
 .item-text {
   margin-top: 1.5rem;
   flex-basis: 100%;
@@ -503,6 +515,18 @@ nav ul {
 
 .web-item picture {
   flex-basis: 100%;
+}
+
+.web-open img {
+  transition: all ease-in-out 0.5s;
+}
+
+.web-open img:hover {
+  opacity: 0.5;
+}
+
+.web-open img:active {
+  opacity: 0.5;
 }
 
 .item-text {
