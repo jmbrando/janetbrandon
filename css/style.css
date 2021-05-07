@@ -222,7 +222,7 @@ nav ul {
 .banner-contact {
   background-image: url(../img/contact-sm.jpg);
   background-image: url(../img/contact-sm.webp);
-  background-position: bottom;
+  background-position: center;
 }
 
 /************************ main page styles ************************/
