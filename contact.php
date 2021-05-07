@@ -111,6 +111,7 @@
       </header>
 
       <section class="banner banner-contact">
+        <h2 class="hidden">Contact Page</h2>
         <div class="banner-cover-box"></div>
       </section>
 

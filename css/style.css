@@ -230,6 +230,9 @@ nav ul {
 .banner {
   background-repeat: no-repeat;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   height: 15rem;
   margin-top: -0.75rem;
   position: relative;
