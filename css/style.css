@@ -1023,6 +1023,12 @@ footer .copyright {
     flex-basis: 100%;
   }
 
+  .graphic-grid {
+    /* grid-auto-flow: dense; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 1rem;
+  }
+
   .graphic-open {
     flex-basis: calc((100% - 1rem) * 0.6);
   }
@@ -1109,6 +1115,30 @@ footer .copyright {
 
   .banner-cover-box {
     height: 40vh;
+  }
+
+  .provisions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .provision {
+    flex-basis: calc((100% - 4rem) / 3);
+    align-content: center;
+    margin-top: 1rem;
+  }
+
+  .provision:nth-child(2) {
+    padding-top: 1.75rem;
+  }
+
+  .provision:last-child {
+    margin-top: 0;
+  }
+
+  .provision p {
+    flex-basis: 100%;
   }
 
 }
