@@ -84,6 +84,8 @@ a.flag svg:hover {
 
 a svg:active {
   opacity: 0.25;
+  -moz-opacity: 0.25;
+  -webkit-opacity: 0.25;
 }
 
 .closing-svg {
@@ -180,10 +182,14 @@ nav a {
 
 nav a:hover {
   opacity: 0.25;
+  -moz-opacity: 0.25;
+  -webkit-opacity: 0.25;
 }
 
 nav a:active {
   opacity: 0.25;
+  -moz-opacity: 0.25;
+  -webkit-opacity: 0.25;
 }
 
 nav ul {
@@ -397,10 +403,14 @@ nav ul {
 
 .graphic-open img:hover {
   opacity: 0.5;
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
 }
 
 .graphic-open img:active {
   opacity: 0.5;
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
 }
 
 .item-text {
@@ -526,10 +536,14 @@ nav ul {
 
 .web-open img:hover {
   opacity: 0.5;
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
 }
 
 .web-open img:active {
   opacity: 0.5;
+  -moz-opacity: 0.5;
+  -webkit-opacity: 0.5;
 }
 
 .item-text {
@@ -607,6 +621,8 @@ nav ul {
   position: absolute;
   height: 0;
   opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
   transition: 0.25s;
 }
 
@@ -614,6 +630,8 @@ nav ul {
   position: static;
   height: auto;
   opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
 }
 
 
@@ -846,10 +864,14 @@ footer ul a {
 
 footer ul a:hover {
   opacity: 0.25;
+  -moz-opacity: 0.25;
+  -webkit-opacity: 0.25;
 }
 
 footer ul a:active {
   opacity: 0.25;
+  -moz-opacity: 0.25;
+  -webkit-opacity: 0.25;
 }
 
 footer .social {
@@ -950,11 +972,15 @@ footer .copyright {
   nav ul li a:hover {
     color: var(--accent);
     opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
   }
 
   nav ul li a:active {
     color: var(--accent);
     opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
   }
 
   /* banner styles */
@@ -1169,6 +1195,8 @@ footer .copyright {
   .banner {
     height: 80vh;
     opacity: 0.8;
+    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
   }
 
   .banner-cover-box {
