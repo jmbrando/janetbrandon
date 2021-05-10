@@ -207,29 +207,38 @@ nav ul {
 
 /************************ banner styles ************************/
 
-.banner-home {
+.no-webp .banner-home {
   background-image: url(../img/profile-sm.jpg);
+}
+
+.webp .banner-home {
   background-image: url(../img/profile-sm.webp);
-  background-position: center;
 }
 
-.banner-graphic {
+.no-webp .banner-graphic {
   background-image: url(../img/graphic-sm.jpg);
+}
+
+.webp .banner-graphic {
   background-image: url(../img/graphic-sm.webp);
-  background-position: center;
 }
 
-.banner-web {
+.no-webp .banner-web {
   background-image: url(../img/web-sm.jpg);
-  background-image: url(../img/web-sm.webp);
-  background-position: center;
 }
 
-.banner-contact {
-  background-image: url(../img/contact-sm.jpg);
-  background-image: url(../img/contact-sm.webp);
-  background-position: center;
+.webp .banner-web {
+  background-image: url(../img/web-sm.webp);
 }
+
+.no-webp .banner-contact {
+  background-image: url(../img/contact-sm.jpg);
+}
+
+.webp .banner-contact {
+  background-image: url(../img/contact-sm.webp);
+}
+
 
 /************************ main page styles ************************/
 
@@ -239,6 +248,7 @@ nav ul {
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+  background-position: center;
   height: 15rem;
   margin-top: -0.75rem;
   position: relative;
@@ -1105,23 +1115,35 @@ footer .copyright {
     height: 50vh;
   }
 
-  .banner-home {
+  .no-webp .banner-home {
     background-image: url(../img/profile-md.jpg);
+  }
+
+  .webp .banner-home {
     background-image: url(../img/profile-md.webp);
   }
 
-  .banner-graphic {
+  .no-webp .banner-graphic {
     background-image: url(../img/graphic-md.jpg);
+  }
+
+  .webp .banner-graphic {
     background-image: url(../img/graphic-md.webp);
   }
 
-  .banner-web {
+  .no-webp .banner-web {
     background-image: url(../img/web-md.jpg);
+  }
+
+  .webp .banner-web {
     background-image: url(../img/web-md.webp);
   }
 
-  .banner-contact {
+  .no-webp .banner-contact {
     background-image: url(../img/contact-md.jpg);
+  }
+
+  .webp .banner-contact {
     background-image: url(../img/contact-md.webp);
   }
 
@@ -1172,23 +1194,35 @@ footer .copyright {
 
 @media (min-width: 1000px) {
 
-  .banner-home {
+  .no-webp .banner-home {
     background-image: url(../img/profile-lg.jpg);
+  }
+
+  .webp .banner-home {
     background-image: url(../img/profile-lg.webp);
   }
 
-  .banner-graphic {
+  .no-webp .banner-graphic {
     background-image: url(../img/graphic-lg.jpg);
+  }
+
+  .webp .banner-graphic {
     background-image: url(../img/graphic-lg.webp);
   }
 
-  .banner-web {
+  .no-webp .banner-web {
     background-image: url(../img/web-lg.jpg);
+  }
+
+  .webp .banner-web {
     background-image: url(../img/web-lg.webp);
   }
 
-  .banner-contact {
+  .no-webp .banner-contact {
     background-image: url(../img/contact-lg.jpg);
+  }
+
+  .webp .banner-contact {
     background-image: url(../img/contact-lg.webp);
   }
 
@@ -1207,23 +1241,36 @@ footer .copyright {
 
 @media (min-width: 1300px) {
 
-  /* .banner-home {
+
+  /* .no-webp .banner-home {
     background-image: url(../img/profile-xl.jpg);
+  }
+
+  .webp .banner-home {
     background-image: url(../img/profile-xl.webp);
   } */
 
-  .banner-graphic {
+  .no-webp .banner-graphic {
     background-image: url(../img/graphic-xl.jpg);
+  }
+
+  .webp .banner-graphic {
     background-image: url(../img/graphic-xl.webp);
   }
 
-  .banner-web {
+  .no-webp .banner-web {
     background-image: url(../img/web-xl.jpg);
+  }
+
+  .webp .banner-web {
     background-image: url(../img/web-xl.webp);
   }
 
-  .banner-contact {
+  .no-webp .banner-contact {
     background-image: url(../img/contact-xl.jpg);
+  }
+
+  .webp .banner-contact {
     background-image: url(../img/contact-xl.webp);
   }
 
