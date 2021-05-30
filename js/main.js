@@ -20,6 +20,28 @@ menuExit.addEventListener('click', function(){
 });
 
 
+// gallery fade in and up scripts
+
+$(window).scroll(function(){
+  inViewport();
+});
+
+$(window).resize(function(){
+  inViewport();
+});
+
+function inViewport(){
+  $('.animated').each(function(){
+    var divPos = $(this).offset().top,
+            topOfWindow = $(window).scrollTop();
+
+    if( divPos < topOfWindow+500 ){
+      $(this).addClass('fadeInUp');
+    }
+  });
+}
+
+
 // graphic scripts
 
 var graphicA = document.querySelectorAll('.graphic-open').forEach(graphicOpen => {
@@ -42,7 +64,7 @@ var graphicB = document.querySelectorAll('.graphic-close').forEach(graphicClose 
   });
 });
 
- 
+
 // web scripts
 
 var webA = document.querySelectorAll('.web-open').forEach(webOpen => {
